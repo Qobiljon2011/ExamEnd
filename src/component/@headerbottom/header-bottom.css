@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.all {
+  position: relative;
+  background-image: url("https://s3-alpha-sig.figma.com/img/caf5/016f/97f154adfd88d0e48d9a7fc87e5ab035?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YKFT1pH7jc~vfigaOM6LA5TsF8Jx2DnThyDOxr~-0kIkaUSdQYERDUs4IW7GOcI87ZgxZbjSpRzmg0ZqEtQngMWq-hjOM~zV3o2L-uCzKO23l6O3U7OTpBZHLr-oy1tZAspVdHceVuToOx10gkKjnHFYygcskVNodkZDGtH2WNCZJ~6b7gwTpYd~nhZ3s7lcyEzcS6EFHxvfFCs6uAXMf0oCwh4XdfBztkjtEu4q-jAFFYyZoIiRc1ByUOWquvfh~KFrBy-dvViTf~dp0ugW~jKdNVqB58SDXaCZekvMqfdwvOGV8MP7ReMABS7XXZGIkfULQESwOtevsH1AnK5Myg__");
+  overflow: hidden;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logos-slide {
+  display: flex;
+  animation: slide 45s linear infinite;
+}
+
+.logos-slide:hover {
+  animation-play-state: paused;
+}
+
+.logos-slide-img {
+  width: 120px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 80px; 
+  flex-shrink: 0; 
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
